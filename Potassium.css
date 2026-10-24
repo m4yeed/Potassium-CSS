@@ -1,11 +1,12 @@
 :root {
-  --wall-opacity: .70; 
-  --wall-bright:  .55;   
-  --wall-blur:    1px;   
-  --tint-opacity: .30;   
-  --tint-color:   #824c88;
+  --wall-opacity: .70;      /* wallpaper visibility */
+  --wall-bright:  .55;      /* wallpaper brightness */
+  --wall-blur:    1px;      /* wallpaper blur */
+  --tint-opacity: .30;      /* color tint strength */
+  --tint-color:   #824c88;  /* tint color */
 }
 
+/* replace the text inside url("") with a direct link to your image (.jpg / .png) */
 body::before {
   content: "";
   position: fixed; inset: 0;
