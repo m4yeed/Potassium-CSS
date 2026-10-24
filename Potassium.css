@@ -1,0 +1,31 @@
+:root {
+  --wall-opacity: .70; 
+  --wall-bright:  .55;   
+  --wall-blur:    1px;   
+  --tint-opacity: .30;   
+  --tint-color:   #824c88;
+}
+
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  background: url("𝙋𝙃𝙊𝙏𝙊 𝙐𝙍𝙇 𝙃𝙀𝙍𝙀") center 22% / cover no-repeat;
+  filter: blur(var(--wall-blur)) brightness(var(--wall-bright));
+  opacity: var(--wall-opacity);
+  mix-blend-mode: screen;
+  z-index: 2147483646;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed; inset: 0;
+  background: var(--tint-color);
+  opacity: var(--tint-opacity);
+  mix-blend-mode: color;
+  z-index: 2147483647;
+  pointer-events: none;
+}
+
+::selection { background: rgba(181,123,196,.35); }
+::-webkit-scrollbar-thumb { background: rgba(181,123,196,.4); border-radius: 8px; }
