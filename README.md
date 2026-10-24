@@ -76,3 +76,6 @@ background: url("PHOTO URL HERE") center 22% / cover no-repeat;
 |---|---|
 | `--wall-opacity` | видимость обоев |
 | `--wall-bright` | яркость обоев
+| `--wall-blur` | размытие обоев |
+| `--tint-opacity` | сила цветового оттенка |
+| `--tint-color` | цвет оттенка |
